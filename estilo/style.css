@@ -1,0 +1,144 @@
+@charset "UTF-8";
+
+@import url(/fontes/idroid.otf);
+
+@font-face{
+    font-family: "android";
+    src: url('../fontes/idroid.otf') format('opentype');
+}
+
+:root{
+    --cor0: #EDE7E3;
+    --cor1: #489FB5;
+    --cor2: #82C0CC;
+    --cor3: #ebf3f5;
+    --cor4: #b7dbe4;
+    --cor5: #79d2e9;
+
+    --fonte-padrão: arial, verdana;
+    --fonte-destaque: cursive;
+    --fornte-android: 'android', cursive;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: var(--cor0);
+    font-family: var(--fonte-padrão);
+   
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
+    min-width: 150px;
+    text-align: center;
+    padding-top: 40px;
+}
+
+header > h1{
+    color: white;
+    font-family: var(--fonte-destaque);
+    font-size: jem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.267);
+}
+
+header > p{
+    color: white;
+}
+
+nav{
+    background-color: var(--cor5);
+    padding: 5px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.123);
+}
+
+nav a{
+    padding: 5px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover{
+    background-color: var(--cor3);
+    color: var(--cor5);
+    transition-duration: 1s;
+}
+
+main{
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.267);
+    margin-bottom: 30px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+main img{
+    width: 100%;
+}
+
+main img.pequena{
+    max-width: 350;
+    margin: auto;
+    display: block;
+}
+main h1{
+    color: var(--cor5);
+    font-family: var(--fornte-android);
+}
+
+main h2{
+    color: var(--cor5);
+}
+
+main p{
+    margin: 15px opx;
+    text-align: justify;
+    text-indent: 30px;
+    font-size: 1em;
+    line-height: 2em;
+}
+
+main strong{
+    background-color: #b7dbe4 ;
+    font-weight: bold;
+    color: #37b0ce ;
+    padding: 2px 6 px;
+
+}
+
+main a{
+    background-color: #b7dbe4 ;
+    font-weight: bold;
+    color: #37b0ce ;
+    padding: 2px 6 px;
+    text-decoration: none;
+}
+
+main a:hover{
+    text-decoration: underline;
+}
+
+footer{
+    background-color: var(--cor5);
+    text-align: center;
+}
+
+aside {
+    background-color: #79d2e9;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+aside ul{
+    list-style-position: inside;
+    columns: 2;
+}
